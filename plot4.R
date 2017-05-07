@@ -20,7 +20,7 @@ date_time <- strptime(paste(Power$Date, Power$Time, sep=" "), "%d/%m/%Y %H:%M:%S
 ##Calling png function
 png("./EDAassignement/plot4.png", width=480, height=480)
 
-##Making the 2,2 matrice for the graphs
+##Making the 2,2 matrix for the graphs
 par(mfrow = c(2, 2)) 
 
 ##Making graph 1
