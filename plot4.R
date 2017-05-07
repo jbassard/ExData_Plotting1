@@ -14,7 +14,8 @@ Power <- read.table(dataFile , header=TRUE, sep=";", na.strings = "?")
 ##Subset the data
 Power <-rbind(Power[Power$Date=="1/2/2007",],Power[Power$Date=="2/2/2007",])
 
-##Changing date and time format
+##Changing date and time format and local date settings
+Sys.setlocale("LC_TIME", "English")
 date_time <- strptime(paste(Power$Date, Power$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
 
 ##Calling png function
