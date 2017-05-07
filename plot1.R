@@ -20,8 +20,5 @@ png("./EDAassignement/plot1.png", width=480, height=480)
 ##Calling histogram function
 hist(as.numeric(as.character(Power$Global_active_power)),col="red",main="Global Active Power",xlab="Global Active Power(kilowatts)")
 
-##Annotating graph
-title(main="Global Active Power")
-
 ##Closing png function
 dev.off()
